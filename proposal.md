@@ -1,5 +1,5 @@
 # Milestone 1: Proposal
----
+
 ### Team Name
 Tycho
 
