@@ -9,7 +9,7 @@
 ---
 
 ### Storyboard 2: Jack the All-Nighter Fighter
-Jack stays up too late and can't stay focused when he needs to.  Luckily he has a habit tracker app to keep help him track and inspire his progress toward a rehabilitated sleeping schedule. 
+Jack stays up too late and can't stay focused when he needs to.  Luckily he has a habit tracker app to keep help him on track and inspire his progress toward a rehabilitated sleeping schedule. 
 
 ![Storyboard 2](https://github.com/kkhiga/cogs121/blob/master/assets/Storyboards/storyboard2.jpg?raw=true "Storyboard 2")
 
