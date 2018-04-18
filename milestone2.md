@@ -2,12 +2,12 @@
 ## Storyboards
 
 ### Storyboard 1:
-![Storyboard 1](https://github.com/kkhiga/cogs121/blob/master/assets/storyboard_1.png?raw=true "Storyboard 1")
+![Storyboard 1](https://github.com/kkhiga/cogs121/blob/master/assets/Storyboards/storyboard1.jpg?raw=true "Storyboard 1")
 
 ---
 
 ### Storyboard 2:
-![Storyboard 2](https://github.com/kkhiga/cogs121/blob/master/assets/storyboard_2.png?raw=true "Storyboard 2")
+![Storyboard 2](https://github.com/kkhiga/cogs121/blob/master/assets/Storyboards/storyboard2.jpg?raw=true "Storyboard 2")
 
 
 ## Prototypes
