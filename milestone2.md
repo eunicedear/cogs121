@@ -1,8 +1,8 @@
 # Milestone 2: Sketches
 ## Storyboards
 
-### Storyboard 1: Jeff the Binge Watcher
-
+### Storyboard 1: Anna the Winter Weight Loser
+Anna wants to lose some holiday weight by kicking her TV snacking habits and exercising instead.  She tracks the persistence of her weight loss journey with a handy habit trackig app.
 
 ![Storyboard 1](https://github.com/kkhiga/cogs121/blob/master/assets/Storyboards/storyboard1.jpg?raw=true "Storyboard 1")
 
