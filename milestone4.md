@@ -2,11 +2,11 @@
 ## UI Skeleton
 Screenshots of our UI skeleton webpages.
 
-![Login](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/login.png?raw=true "Login")
+![Login](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/login.png)
 ![Register](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/register.png?raw=true "Register")
 ![Home](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/home.png?raw=true "Home")
-![Closet](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/closet.png?raw=true "Closet")
-![Store](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/store.png?raw=true "Store")
+![Closet](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/closet.png)
+![Store](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/store.png)
 ![Habits](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/habits.png?raw=true "Habits")
 ![Enter Pin](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/pin.png?raw=true "Enter Pin")
 ![Add Habit](https://github.com/kkhiga/cogs121/blob/master/assets/Skeleton/add_habit.png?raw=true "Add Habit")
