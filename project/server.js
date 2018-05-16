@@ -19,7 +19,7 @@ const db = new sqlite3.Database('habits.db');
 // Redirects user to accounts page as res(ponse)
 // Note: Accounts page handles redirecting user if not logged in
 app.get('/', (req, res) => {
-  res.redirect('login.html');
+  res.redirect('accounts.html');
 });
 
 
@@ -72,6 +72,7 @@ app.post('/createAccount', (req, res) => {
     // IF unsucessful inserting new user
     if (err) {
       // Send response = error status
+      console.log('ERROR');
       res.sendStatus(500);
     } else {
       // Database query for user just added
@@ -114,7 +115,7 @@ app.post('/children', (req, res) => {
       } else {
         // Send response = empty {}
         console.log('User has no children, sending {}...');
-        res.sendStatus({});
+        res.send({});
       }
     });
   }
@@ -230,6 +231,63 @@ app.post('/createHabit', (req, res) => {
   });
 });
 
+// POST request, run when user submits "Edit Habit" form
+// Receives title, description, and date in req(uest) body
+// Returns status (Success OR Error)
+app.post('/updateHabit', (req, res) => {
+  console.log('Request body at /updateHabit: ', req.body);
+  // TODO: Add error checking for request body
+  // Database query to add habit to habits table
+  db.run('UPDATE habits_to_child SET title=$title, description=$description, due=$date WHERE habitid=$habitid', {
+    $title: req.body.title,
+    $description: req.body.description,
+    $date: req.body.date,
+    $habitid: req.body.habitid
+  }, (err) => {
+    // IF unsuccessful inserting new habit
+    if (err) {
+      // Send response = error status
+      res.sendStatus(500);
+    } else {
+      // Send response = success status
+      res.send({
+        message: 'Successfully added new habit to database!'
+      });
+    }
+  });
+});
+
+// POST request, run when navigating to habits page
+// Receives childid in req(uest) body
+// Returns array of child's habits as res(ponse)
+app.post('/habitStats', (req, res) => {
+  console.log('Request body at /habitStats: ', req.body);
+  if (!req.body.habitid) {
+    // Redirect to accounts if no childid
+    res.redirect('habits.html');
+  } else {
+    // Database query for habits with matching childid
+    db.all('SELECT * FROM habits_to_child WHERE habitid=$habitid', {
+      $habitid: req.body.habitid
+    }, (err, data) => {
+      // IF database query finds habits with matching childid
+
+      if (data.length > 0) {
+        console.log('found: ', data);
+        // Send response = the result of the query
+        res.send(data[0]);
+        // ELSE database query did not find any habits with childid
+      } else {
+        // Send response = empty {}
+        console.log('No habit data for that habit id, sending {}...');
+        res.send({});
+      }
+    });
+  }
+});
+
+
+
 
 // app.post('/verifyChild', (req, res) => {
 //   db.all(
@@ -247,6 +305,21 @@ app.post('/createHabit', (req, res) => {
 //     }
 //   );
 // });
+
+
+app.post('/pet-preview', (req, res) => {
+  db.all('SELECT url FROM child-to-accessories WHERE accessoryid=$accessoryid', {
+    $accessoryid: req.body.accessoryid
+  }, (err, data) => {
+    console.log('pet-preview url ' + data);
+    if( data.length > 0 ) {
+      res.send( data );
+    } else {
+      console.log( 'No url' );
+      res.sendStatus(500);
+    }
+  });
+});
 
 
 app.listen(3000, () => {
