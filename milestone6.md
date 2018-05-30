@@ -2,12 +2,14 @@
 ## UI Skeleton
 Screenshots of our latest UI webpages.
 
-![Accounts](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone5/accounts.png)
-![Points Before](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone5/points_before.png)
-![Points After](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone5/points_after.png)
-![Wearing Bowtie](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone5/dog-bowtie.png)
-![Habit](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone5/habits.png)
-![Edit Habit](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone5/edit_habit.png)
+![Log Habit](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone6/log.png)
+![Home](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone6/home.png)
+![Data Visualization 1](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone6/data-vis1.png)
+![Data Visualization 2](https://github.com/kkhiga/cogs121/blob/staging/assets/Milestone6/data-vis2.png)
 
 ## Improvements to UI
-Since Milestone 4, we have added more functionality to our habits page.  After the user adds a new habit, that data will be displayed on the frontend/UI. We have also created an accounts page that will hold all the child accounts under the parent's account. Adding a new child will have the same functionality as adding a new habit. From this, the user can navigate to their homepage (that displays their pet) and therefore the habits page. We also added an option for the user to edit their existing information about their habits. We did this by creating a modal with the existing data, and you can directly edit the information in the modal to make the changes to be saved.
+Our UI for Milestone 5 incorporated more functionality to our accounts and habits page. For this Milestone 6, we made more improvements to the entire process of logging, creating, and editing your habits. We did this by adding the logging portion, which we implemented by having a modal that popped up automatically on the child's home page and asked them if they finished (or did not finish) their habit for the day. To allow more flexibility, we gave the user the option to answer later. If they finish their habit later in the day, we added a "Log my habits" button on the home page so they can go back and log their habits if they wish.
+The other main portion of this milestone was the data visualization part (explained more below).
+
+## Data Visualization Explanation
+We decided to go with a calendar (or "heat map") chart that shows the overall monthly view of a child's record of their habits. The green squares represent the days where they marked their habit complete, and the gray squares represent the incomplete days. You can get a closer detail by clicking on the squares, and you can also see the total number of days completed for the current month. A child can simply log their habit for the day by clicking "yes" or "no" when they are prompted to do so on the home page. Their response will be reflected on the calendar, and the start of a new month will have blank (i.e. gray) squares.
