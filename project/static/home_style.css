@@ -56,6 +56,17 @@ a {
 	line-height: 80px;
 }
 
+.back-btn {
+    position: absolute;
+    left: 10%;
 
+}
 
+.log-btn {
+	width: 20%;
+	margin: 0px 20px;
+}
 
+.later {
+	color: #999;
+}

@@ -1,3 +1,7 @@
+body {
+		overflow-x: hidden;
+}
+
 * {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -8,8 +12,8 @@
 
 h4 {
 	text-align: center;
-	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-top: 24px;
+	padding-bottom: 24px;
 	font-family: 'Montserrat';
 }
 
@@ -17,10 +21,22 @@ p {
 	margin: 10px auto 10px;
 }
 
-.section {
-    margin: 30px;
+.section-head {
+    margin: 24px;
 }
 
 .back-btn {
     border-radius: 50px;
+}
+
+.calendar {
+	margin: 0px;
+	overflow-x: auto;
+}
+
+#myChart {
+	min-height: 400px;
+	min-width: 100vw;
+	max-width: 600px;
+	overflow: auto;
 }

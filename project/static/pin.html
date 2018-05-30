@@ -12,39 +12,35 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<!-- Custom Styles -->
 	<link href="login_style.css" rel="stylesheet">
+	<!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+  <!-- Add additional services you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
 </head>
 
 <body>
-
-	<h1>Habit-at</h1>
-	<div class="signup-form">
-		<form>
-			<input id="name" type="text" title="name" autocomplete="name" placeholder="Name" />
-			<input id="email" type="email" title="email" autocomplete="email" placeholder="Email" />
-			<input id="username" type="text" title="username" autocomplete="off" placeholder="Username" />
-			<input id="password" type="password" title="password" autocomplete="off" placeholder="Password" />
-
-			<button id="submitButton" type="submit" class="btn">Sign Up</button>
-		</form>
-		<form action="login.html">
-			<p>Already have an account?</p>
-			<button type="submit" class="btn">Login</button>
-		</form>
-	</div>
-
-
-
-
+  <div class="container">
+    <div class="row">
+      <h1>Habit-at</h1>
+      <h5>Setup your parental pin</h5>
+    </div>
+    <div class="row">
+      <form>
+        <div class="form-group">
+          <label for="input-pin" class="col-form-label">Secret Pin</label>
+          <input type="password" class="form-control" id="input-pin">
+          <button id="createPin" type="button" class="btn btn-primary" data-dismiss="modal">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
 	<!-- JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<script src="signup.js"></script>
-
-	<script type="main.js"></script>
-	<script type="text/JavaScript">
-	</script>
+  <script src="pin.js"></script>
 
 </body>
 

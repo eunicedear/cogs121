@@ -25,11 +25,17 @@ h4 {
 	height: auto;
 }
 
+#pet-img {
+	padding-top: 36px;
+}
+
 .wrapper {
 	/*text-align: center;*/
 	justify-content: center;
 	padding: 30px;
 	margin: 0 auto;
+	margin-top: 32px;
+	margin-bottom: 32px;
 	width: 100%
 	display: inline-block;
 	display: grid;
@@ -48,12 +54,24 @@ h4 {
 }
 
 .items {
+	text-align: center;
+	justify-content: center;
+	/* background-color: lightgray; */
+	line-height: 60px;
+	width: 68px;
+	height: 68px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.item-img {
 	justify-content: center;
 	/* background-color: lightgray; */
 	width: 50px;
 	height: 50px;
 	margin: 0 auto;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 
@@ -77,4 +95,10 @@ a {
 	display: inline-block;
 	padding: 0.3em 2em;
 	margin: 0px 20px;
+}
+
+.selected_btn {
+	background-color: lightgray;
+	border-radius: 50%;
+
 }
