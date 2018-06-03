@@ -40,7 +40,6 @@ function viewHabits() {
     } else {
       console.log("Child has no habits");
     }
-
   });
 }
 
@@ -80,7 +79,8 @@ function writeHabit(title, description, date, childid) {
     title: title,
     description: description,
     date: date,
-    childid: childid
+    log: null
+    // childid: childid
   }).then(() => {
     console.log("Habit Written:", name);
     location.reload();
