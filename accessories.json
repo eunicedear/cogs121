@@ -1,0 +1,87 @@
+{
+  "0":{
+    "itemURL": "boots-yellow.png",
+    "dogURL": "dog-boots.png",
+    "points": 5
+  },
+  "1":{
+    "itemURL": "bow-tie.png",
+    "dogURL": "dog-bowtie.png",
+    "points": 5
+  },
+  "2":{
+    "itemURL": "cap-yellow.png",
+    "dogURL": "dog-yellowcap.png",
+    "points": 5
+  },
+  "3":{
+    "itemURL": "carnival-mask.png",
+    "dogURL": "dog-mask.png",
+    "points": 4
+  },
+  "4":{
+    "itemURL": "earmuffs.png",
+    "dogURL": "dog-earmuffs.png",
+    "points": 7
+  },
+  "5":{
+    "itemURL": "headband-bunny.png",
+    "dogURL": "dog-bunnyears.png",
+    "points": 7
+  },
+  "6":{
+    "itemURL": "necklace.png",
+    "dogURL": "dog-necklace.png",
+    "points": 5
+  },
+  "7":{
+    "itemURL": "necktie.png",
+    "dogURL": "dog-bluetie.png",
+    "points": 6
+  },
+  "8":{
+    "itemURL": "polo-shirt.png",
+    "dogURL": "dog-blueshirt.png",
+    "points": 5
+  },
+  "9":{
+    "itemURL": "red-winter-hat.png",
+    "dogURL": "dog-redhat.png",
+    "points": 5
+  },
+  "10":{
+    "itemURL": "redtie.png",
+    "dogURL": "dog-redtie.png",
+    "points": 3
+  },
+  "11":{
+    "itemURL": "scarf-red.png",
+    "dogURL": "dog-scarf.png",
+    "points": 7
+  },
+  "12":{
+    "itemURL": "shirt-pink.png",
+    "dogURL": "dog-redshirt.png",
+    "points": 7
+  },
+  "13":{
+    "itemURL": "sunglasses-red.png",
+    "dogURL": "dog-sunglasses1.png",
+    "points": 3
+  },
+  "14":{
+    "itemURL": "sunglasses.png",
+    "dogURL": "dog-sunglasses3.png",
+    "points": 4
+  },
+  "15":{
+    "itemURL": "sunglasses2.png",
+    "dogURL": "dog-sunglasses2.png",
+    "points": 4
+  },
+  "16":{
+    "itemURL": "vest.png",
+    "dogURL": "dog-vest.png",
+    "points": 3
+  }
+}
