@@ -21,6 +21,9 @@
 - HTML/CSS/JS front-end coding
 - SQLite/Firebase requests
 
+## Demo Video
+https://drive.google.com/file/d/18S6cVZvvZzKifeFeYCloIlva9ep5RGtf/view?usp=sharing
+
 ## Source Code Files & Functionality
 1. **add_accessories.js:**
 SQL Queries to initialize the accessories database for the store by inserting accessory item data into database
