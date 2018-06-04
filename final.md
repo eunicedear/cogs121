@@ -7,7 +7,9 @@
 
 **Eunice Kim**
 
-- [contributions]
+- Helped create prototype 2
+- HTML/CSS/JS front-end coding such as the habits page, accounts page, modals, buttons, and the UI of the data visualization.
+- Coded some Firebase requests such as logging and displaying the points on the home page, updating the avatar's appearance in the closet by updating the database, and updating the home page avatar.
 
 **Shelly (Ji) Bae**
 
