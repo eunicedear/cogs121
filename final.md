@@ -3,7 +3,10 @@
 ## Team Members & Contributions
 **Kellie Higa**
 
-- [contributions]
+- Helped create prototype 2
+- Setup Databases (Early SQLite database & Later Firebase)
+- JavaScript Front-end and Back-end coding
+- Created Video for App Walkthrough
 
 **Eunice Kim**
 
@@ -85,20 +88,14 @@ Stylesheet for login.html
 22. **login.js:**
 Access Firebase to allow user login and account authentication.
 
-23. **pin.html:**
-Allows user to set up pin code to lock certain features from child access.
-
-24. **signup.js:**
+23. **signup.js:**
 Access Firebase to allow user to signup using email, Google account, or phone number.
 
-25. **start_firebase.js:**
-Initialize Firebase database for current user.
-
-26. **store.html:**
+24. **store.html:**
 Displays accessories available to purchase for child's pet using his/her accumulated points.
 
-27. **store_style.css:**
+25. **store_style.css:**
 Stylesheet for store.html
 
-28. **store.js:**
+26. **store.js:**
 Grabs child's data from database for number of points available to spend, accessories not purchased yet to display in the store, and update database when selected item is purchased.
