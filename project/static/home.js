@@ -1,3 +1,9 @@
+// Fetches child's account data from database to display child's pet, number
+// of points, current level, and habits to log. A window pops up that asks the
+// user to log their habit by clicking yes or no. Yes (or no) will update the
+//database so that they can view their progress on the data visualization
+// calendar. Logged habits are updated.
+
 var userId, database, childId, habitId;
 var config = {
   apiKey: "AIzaSyANhXaRoHHK8S06Y54SU_lqwmzDMBpiGfI",
@@ -117,7 +123,7 @@ $('#open-log').click(() => {
       console.log("Child has no habits");
       $("#status").text("You don't have any habits to log, create a new one!");
       $('#info-modal').modal('show');
-    
+
     }
   });
 });
@@ -126,11 +132,25 @@ $('#input-yes').click(() => {
   var date = getCurrentDate();
   console.log(date);
 
+  var points = "users/" + userId + "/children/" + childId + "/points";
+
   database.ref("users/" + userId + "/children/" + childId + "/habits/" + habitId + "/log/" + date).set(
     1
   ).then(() => {
     console.log("Log Written:", date);
     location.reload();
+  });
+
+  database.ref(points).once("value", (snapshot) => {
+    const data = snapshot.val() + 10;
+    if (data) {
+      database.ref(points).set(data).then(() => {
+        console.log("Child's points:", data);
+        $("#points").text(data + " Pts");
+      });
+    } else {
+      console.log("Child has no points");
+    }
   });
 });
 

@@ -1,3 +1,7 @@
+// Displays the list of habits by fetching the child's habit data from database.
+// Updates habit database if user creates new habit and appends it to the
+// list of habits.
+
 var userId, database, childId;
 var config = {
   apiKey: "AIzaSyANhXaRoHHK8S06Y54SU_lqwmzDMBpiGfI",
@@ -72,7 +76,7 @@ function handleHabitClick(element) {
   console.log('Habit ', habitid, ' clicked');
   localStorage.setItem('habitid', habitid);
   location.href = 'habit_stats.html';
-}
+};
 
 function writeHabit(title, description, date, childid) {
   database.ref("users/" + userId + "/children/" + childId + "/habits").push({

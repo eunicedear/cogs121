@@ -1,3 +1,9 @@
+// Displays user's children's accounts by saving the child's and user's ID to
+// localStorage. Saves it to the database and appends it to the habit list by
+// arsing the data into the template. Allows user to add an account for child.
+// Allows logout.
+
+
 var userId, database;
 var config = {
   apiKey: "AIzaSyANhXaRoHHK8S06Y54SU_lqwmzDMBpiGfI",
@@ -94,9 +100,9 @@ $('#createChild').click(() => {
 });
 
 $('#logout-btn').click(() => {
+  console.log('Logout Button Clicked');
   localStorage.clear();
   firebase.auth().signOut();
-
 });
 
 window.addEventListener('load', function() {

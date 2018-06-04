@@ -1,3 +1,9 @@
+// Displays relevant habit information by grabbing the selected habit's data
+// from the database. Displays information such as past logs, progress,
+// setbacks, etc. Also displays the data visualization (calendar) by calling
+// ZingChart's calendar API and making necessary changes to the database. Allows
+// user to make changes to habit data.
+
 var userId, database, childId, habitId;
 var config = {
   apiKey: "AIzaSyANhXaRoHHK8S06Y54SU_lqwmzDMBpiGfI",
@@ -53,8 +59,8 @@ function viewHabitStats() {
               text: '2018',
               visible: false
             },
-            startMonth: 5,
-            endMonth: 5,
+            startMonth: 6,
+            endMonth: 6,
             palette: ['none', '#4CAF50'],
             month: {
               item: {
@@ -69,12 +75,12 @@ function viewHabitStats() {
                 fontColor: 'gray',
                 fontSize: 9
               }
-            }            
+            }
           },
           labels: [{ //Lefthand Label (container portion)
               borderColor: 'gray',
               borderWidth: 1,
-              x: '8%',
+              x: '27%',
               y: '60%',
               width: '40%',
               height: '30%'
@@ -83,7 +89,7 @@ function viewHabitStats() {
               text: 'Completed Habit?\n 1 = Yes, 0 = No',
               fontColor: '#212121',
               textAlign: 'center',
-              x: '10%',
+              x: '29%',
               y: '65%',
               width: '36%'
             },
@@ -93,8 +99,8 @@ function viewHabitStats() {
               fontFamily: 'Montserrat',
               fontSize: 30,
               textAlign: 'center',
-              padding: 10,
-              x: '10%',
+              padding: 15,
+              x: '29%',
               y: '68%',
               width: '36%'
             },
@@ -147,7 +153,7 @@ function viewHabitStats() {
             align: 'center',
             sticky: true,
             timeout: 30000,
-            x: '10%',
+            x: '29%',
             y: '80%',
             width: '36%'
           },

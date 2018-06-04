@@ -1,3 +1,6 @@
+/* Stylesheet for the closet page. It customizes the avatar image that is
+displayed, the buttons, and the different accessories that are there. */
+
 * {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -11,6 +14,12 @@ h4 {
 	text-align: center;
 	width: 100%;
 	padding: 10px;
+}
+
+.back-btn {
+    position: absolute;
+    left: 8%;
+		font-size: 28px;
 }
 
 .pet-img {
